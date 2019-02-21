@@ -31,3 +31,10 @@ cp: cannot stat '/home/techlab/Comp485/versions/dhcp_versions/version_1/*': No s
 02/21/2019 22:01:45 : No files in source directory have been modified since last version creation. No new version will be created.
 02/21/2019 22:01:45 : Done.
 ------------------------------------------------------------
+02/21/2019 22:10:01 : Starting...
+02/21/2019 22:10:01 : Seeking source directory...
+02/21/2019 22:10:01 : Source directory found.
+02/21/2019 22:10:01 : Checking if any files in directory have been modified since last version creation...
+02/21/2019 22:10:01 : No files in source directory have been modified since last version creation. No new version will be created.
+02/21/2019 22:10:01 : Done.
+------------------------------------------------------------

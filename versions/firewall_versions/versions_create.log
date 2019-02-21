@@ -35,3 +35,13 @@ cp: cannot stat '/home/techlab/Comp485/versions/firewall_versions/version_2/*': 
 02/21/2019 22:01:45 : New version created!
 02/21/2019 22:01:45 : Done.
 ------------------------------------------------------------
+02/21/2019 22:10:01 : Starting...
+02/21/2019 22:10:01 : Seeking source directory...
+02/21/2019 22:10:01 : Source directory found.
+02/21/2019 22:10:01 : Checking if any files in directory have been modified sicne last version creation...
+02/21/2019 22:10:01 : Files in source directory have been modified. Creating new version.
+cp: cannot stat '/home/techlab/Comp485/versions/firewall_versions/version_4/*': No such file or directory
+cp: cannot stat '/home/techlab/Comp485/versions/firewall_versions/version_3/*': No such file or directory
+02/21/2019 22:10:01 : New version created!
+02/21/2019 22:10:01 : Done.
+------------------------------------------------------------
