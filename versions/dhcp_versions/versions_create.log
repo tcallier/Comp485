@@ -45,3 +45,14 @@ cp: cannot stat '/home/techlab/Comp485/versions/dhcp_versions/version_1/*': No s
 02/21/2019 22:12:25 : No files in source directory have been modified since last version creation. No new version will be created.
 02/21/2019 22:12:25 : Done.
 ------------------------------------------------------------
+02/21/2019 22:15:27 : Starting...
+02/21/2019 22:15:27 : Seeking source directory...
+02/21/2019 22:15:27 : Source directory found.
+02/21/2019 22:15:27 : Checking if any files in directory have been modified since last version creation...
+02/21/2019 22:15:27 : Files in source directory have been modified. Creating new version...
+cp: cannot stat '/home/techlab/Comp485/versions/dhcp_versions/version_4/*': No such file or directory
+cp: cannot stat '/home/techlab/Comp485/versions/dhcp_versions/version_3/*': No such file or directory
+cp: cannot stat '/home/techlab/Comp485/versions/dhcp_versions/version_2/*': No such file or directory
+02/21/2019 22:15:27 : New version created!
+02/21/2019 22:15:27 : Done.
+------------------------------------------------------------
