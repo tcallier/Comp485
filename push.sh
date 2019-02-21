@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git add hello.txt  && \
+git add versions  && \
 git add -u && \
 git commit -m "remote commit" && \
 git push origin HEAD 
