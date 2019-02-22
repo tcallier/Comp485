@@ -154,3 +154,10 @@ cp: cannot stat '/home/techlab/Comp485/versions/dns_versions/version_2/*': No su
 02/22/2019 09:25:29 : No files in source directory have been modified since last version creation. No new version will be created.
 02/22/2019 09:25:29 : Done.
 ------------------------------------------------------------
+02/22/2019 18:55:33 : Starting...
+02/22/2019 18:55:33 : Seeking source directory...
+02/22/2019 18:55:33 : Source directory found.
+02/22/2019 18:55:33 : Checking if any files in directory have been modified since last version creation...
+02/22/2019 18:55:33 : No files in source directory have been modified since last version creation. No new version will be created.
+02/22/2019 18:55:33 : Done.
+------------------------------------------------------------
