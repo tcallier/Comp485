@@ -192,3 +192,10 @@ cp: cannot stat '/home/techlab/Comp485/versions/firewall_versions/version_3/*': 
 02/25/2019 05:14:19 : No files in source directory have been modified since last version creation. No new version will be created.
 02/25/2019 05:14:19 : Done.
 ------------------------------------------------------------
+02/25/2019 05:15:22 : Starting...
+02/25/2019 05:15:22 : Seeking source directory...
+02/25/2019 05:15:22 : Source directory found.
+02/25/2019 05:15:22 : Checking if any files in directory have been modified sicne last version creation...
+02/25/2019 05:15:22 : No files in source directory have been modified since last version creation. No new version will be created.
+02/25/2019 05:15:22 : Done.
+------------------------------------------------------------
