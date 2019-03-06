@@ -20,7 +20,7 @@ DHCP_LOGFILE=/home/techlab/backups/dhcp_backups/create_backup.log # file path of
 
 DHCP_DATEFILE=/home/techlab/backups/dhcp_backups/current_backup/backup_date.log # file path of dchp backup time-stamp file
 
-DHCP_SOURCE=/home/techlab/config_files/dhcp/* # file path of live dhcp config files
+DHCP_SOURCE=/etc/dhcp/* # file path of live dhcp config files
 
 DHCP_DESTINATION=/home/techlab/backups/dhcp_backups/current_backup/content # file path of dhcp temp destination directory
 
