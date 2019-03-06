@@ -56,3 +56,10 @@ cp: cannot stat '/home/techlab/Comp485/versions/firewall_versions/version_2/*': 
 03/06/2019 09:09:53 : New version created!
 03/06/2019 09:09:53 : Done.
 ------------------------------------------------------------
+03/06/2019 09:13:05 : Starting...
+03/06/2019 09:13:05 : Seeking source directory...
+03/06/2019 09:13:05 : Source directory found.
+03/06/2019 09:13:05 : Checking if any files in directory have been modified sicne last version creation...
+03/06/2019 09:13:05 : No files in source directory have been modified since last version creation. No new version will be created.
+03/06/2019 09:13:05 : Done.
+------------------------------------------------------------
