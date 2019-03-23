@@ -213,9 +213,9 @@ touch $GITLAB_LOG # create the gitlab log file if it does not already exist
 
 echo "Pushing new version to gitlab on $DATE...\n$SPACER" >> $GITLAB_LOG
 
-git add versions && \
-git add -u && \
-git commit -m "remote commit from ubuntu firewall - adding new version to version history" && \
+git add versions && \ 2>> $GITLAB_LOG
+git add -u && \ 2>> $GITLAB_LOG
+git commit -m "remote commit from ubuntu firewall - adding new version to version history" && \ 2>> $GITLAB_LOG
 git push origin HEAD 2>> $GITLAB_LOG
 
 echo "Complete.\n$SPACER" >> $GITLAB_LOG
