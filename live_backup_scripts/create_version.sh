@@ -67,6 +67,8 @@ NETPLAN_FIRST_VERSION=/home/techlab/infrastructure/versions/netplan_versions/ver
 
 NETPLAN_FIRST_VERSION_CONTENT=/home/techlab/infrastructure/versions/netplan_versions/version_1/content # file path to directory containing the content of the most recent dhcp version created (exlcludes time-stamp file)
 
+GITLAB_LOG=/home/techlab/infrastructure/gitlab.log # file path to gitlab log
+
 DATE=$(date "+%m/%d/%Y %T") # Displays the current date/time
 
 SPACER=------------------------------------------------------------ # used to separate log entries
@@ -207,11 +209,15 @@ echo -e "$DATE : Done.\n$SPACER" >> $NETPLAN_LOGFILE # write message to netplan 
 # v adding new versions to gitlab repo v                                                          #
 ###################################################################################################
 
-echo "Pushing new version to gitlab on $DATE...\n$SPACER" >> /home/techlab/infrastructure/gitlab.log
+touch $GITLAB_LOG # create the gitlab log file if it does not already exist
+
+echo "Pushing new version to gitlab on $DATE...\n$SPACER" >> $GITLAB_LOG
 
 git add versions && \
 git add -u && \
 git commit -m "remote commit from ubuntu firewall - adding new version to version history" && \
-git push origin HEAD 2>> /home/techlab/infrastructure/gitlab.log
+git push origin HEAD 2>> $GITLAB_LOG
+
+echo "Complete.\n$SPACER" >> $GITLAB_LOG
 
 # end script
