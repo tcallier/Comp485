@@ -11,7 +11,7 @@
 #			  will not be created. it will save up to five unique versions with	  #
 #			  version one being the newest and version five being the oldest. if five #
 #			  versions exist, version five will be overwritten if a new version is	  #
-#			  added.								  #
+#			  added. when a new version is created, it will be pushed into gitlab.	  #
 # Author		: Thomas Callier							  #
 ###################################################################################################
 
@@ -203,12 +203,15 @@ fi
 
 echo -e "$DATE : Done.\n$SPACER" >> $NETPLAN_LOGFILE # write message to netplan log file that the version create process is complete
 
-####### gitlab
-echo "starting push to github..." >> /home/techlab/infrastructure/gitlab.log
+###################################################################################################
+# v adding new versions to gitlab repo v                                                          #
+###################################################################################################
+
+echo "Pushing new version to gitlab on $DATE...\n$SPACER" >> /home/techlab/infrastructure/gitlab.log
 
 git add versions && \
 git add -u && \
-git commit -m "remote commit from 18.04 vm" && \
+git commit -m "remote commit from ubuntu firewall - adding new version to version history" && \
 git push origin HEAD 2>> /home/techlab/infrastructure/gitlab.log
 
 # end script
