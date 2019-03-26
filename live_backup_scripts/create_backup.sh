@@ -28,9 +28,11 @@ DNS_LOGFILE=/home/techlab/infrastructure/backups/dns_backups/create_backup.log #
 
 DNS_DATEFILE=/home/techlab/infrastructure/backups/dns_backups/current_backup/backup_date.log # file path of dns backup time-stamp file
 
-DNS_SOURCE=/etc/bind/* # file path of live dns config files
+DNS_SOURCE=/etc/bind # file path of live dns config files
 
 DNS_DESTINATION=/home/techlab/infrastructure/backups/dns_backups/current_backup/content # file path of dns temp destination directory
+
+RESOLVE_SOURCE=/etc/resolv.conf # file path of live dns resolve config file
 
 FIREWALL_LOGFILE=/home/techlab/infrastructure/backups/firewall_backups/create_backup.log # file path of firewall copy log file
 
@@ -86,7 +88,9 @@ touch $DNS_LOGFILE # create log file if it does not exist
 
 touch $DNS_DATEFILE # create backup time-stamp file if it does not exist
 
-cp -R $DNS_SOURCE $DNS_DESTINATION 2>> $DNS_LOGFILE # copy dns config source files to destination directory & log any errors 
+cp -R $DNS_SOURCE $DNS_DESTINATION 2>> $DNS_LOGFILE # copy dns config source files to destination directory & log any errors
+
+cp $RESOLVE_SOURCE $DNS_DESTINATION 2>> $DNS_LOGFILE # copy dns resolve source file to destination directory & log any errors
 
 if [ $? -eq 0 ]; then # if file copy successful
 	echo -e "$DATE : $DNS_SOURCE copied to $DNS_DESTINATION\n$SPACER" >> $DNS_LOGFILE # write success message to log file
